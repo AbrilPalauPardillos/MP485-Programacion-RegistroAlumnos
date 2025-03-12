@@ -46,26 +46,26 @@ public class StudentRegister {
                     case 4:
                         //Search student by DNI
                         try {
-                            System.out.print("Introduce el DNI del estudiante: ");
+                            System.out.print("Introduce DNI of the student: ");
                             String DNI = sc.nextLine();
                             Student s = findStudentByDNI(DNI);
                             if (s != null) {
-                                System.out.println("El DNI que has introducido no pertenece a ningún estudiante del sistema.");
+                                System.out.println("The DNI you've entered doesn't belong to any student in the system.");
                             } else {
-                                System.out.print("Nuevo nombre: ");
+                                System.out.print("New name: ");
                                 s.setName(sc.nextLine());
                                 students.remove(s);
                             }
 
                         } catch (Exception e) {
-                            System.err.println("Error en la lectura del fichero.");
+                            System.err.println("Error reading the file.");
                         }
                     case 5:
                         //
                         System.out.println("Good Bye!");
                         break;
                     default:
-                        System.out.println("this option doesn't exists");
+                        System.out.println("This option doesn't exists");
                 }
 
             } while (option != 5);
