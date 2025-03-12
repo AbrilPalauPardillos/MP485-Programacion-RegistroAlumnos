@@ -33,6 +33,7 @@ public class StudentRegister {
                 switch (option) {
                     case 1:
                         //Add new student
+/*NO DEJA CREAR UN NUEVO ALUMNO, EN EL MOMENTO EN QUE ESTE FUNCIONE YA SE PODRAN COMPROVAR LOS SIGUIENTES.*/
                         writeFile();
                         break;
                     case 2:
